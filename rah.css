@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    color: black;
+    max-width: 600px;
+    border: 1px solid #e8e8e8;
+}
+
+.content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.content p {
+    padding: 10px;
+}
+
+.content:target {
+    max-height: 150px;
+}
+
+.a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #2f3542;
+    border: 1px solid #57686f;
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.a:hover {
+    color: #2f3542;
+    background-color: white;
+}
